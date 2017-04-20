@@ -1,10 +1,17 @@
 # bol.com OpenAPI PHP client #
 
 Note: this repository is based on this original repo: https://github.com/devbolcom/bolcom-openapi-php-client
-It contains some updated code that is preventing the original repo from working correctly.
+It contains some updated code that is preventing the original repo from working correctly:
+- Seller properties improvement: https://github.com/devbolcom/bolcom-openapi-php-client/pull/13
+- Links to directories fix: https://github.com/devbolcom/bolcom-openapi-php-client/pull/14
+- Semantic versioning
 
+Over time, this library will be improved. Requests can be made by raising issues.
 
-##Original description of the library
+## A word on the semantic versioning ##
+The major version of this library stands for the version of the bol API for which it works. Currently this is API v4, so all tags are v4.x.x
+
+## Original description of the library ##
 
 Client library with example code for using the bol.com Open API Version 4. If you need a client/example for Version 3 of the Open API you can use https://github.com/devbolcom/bolcom-openapi-php-client/tree/bolcom-openapi-php-client-v3
 
@@ -60,7 +67,7 @@ See the examples/ directory for examples of the key client features.
 ```php
 function __autoload($className)
 {
-    $fileName = preg_replace('/^BolCom\\\\(\w+)/', 'src/bolcom/$1.php', $className);
+    $fileName = preg_replace('/^BolCom\\\\(\w+)/', 'src/BolCom/$1.php', $className);
     if (file_exists($fileName)) {
         return require_once $fileName;
     }
@@ -74,7 +81,7 @@ var_dump($response);
 ## Using Composer ##
 
 ```bash
-composer require "bolcom/bolcom-openapi-php-client" "dev-master"
+composer require "wedesignit/bol.com-openapi-php-client" "~4.0"
 ```
 
 When using composer, classes are autoloaded automatically.
