@@ -1,14 +1,21 @@
 {
-  "name": "bolcom/bolcom-openapi-php-client",
+  "name": "wedesignit/bol.com-openapi-php-client",
   "description": "Client library for the bol.com Open API",
-  "keywords": ["bolcom", "openapi"],
+  "keywords": ["bolcom", "openapi", "php"],
   "type": "library",
   "homepage": "https://developers.bol.com",
   "license": "Apache-2.0",
-  "authors": [{
-    "name": "bol.com",
-    "homepage": "https://github.com/devbolcom/phpexamplecode-v4/contributors"
-  }],
+  "authors": [
+    {
+      "name": "bol.com",
+      "homepage": "https://github.com/devbolcom/phpexamplecode-v4/contributors"
+    },
+    {
+      "name": "Patrick van Kouteren, WeDesignIt",
+      "hoempage": "http://www.wedesignit.nl",
+      "role": "Developer"
+    }
+  ],
   "require": {
     "php": ">=5.3.2"
   },
